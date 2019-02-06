@@ -2,7 +2,7 @@
 
       <a class="navbar-brand mr-1" href="{{route('admin.home')}}">
         <img src="{{url('images/logo.png')}}">
-      Tokap Yosi </a>
+      Tokap Admin </a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -16,6 +16,7 @@
         <li class="nav-item dropdown no-arrow">
           <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-user-circle fa-fw"></i>
+            {{Auth::user()->name}}
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
             <a class="dropdown-item" href="#">Settings</a>
@@ -41,7 +42,13 @@
           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
+            <a class="btn btn-primary"href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+                   document.getElementById('logout-form').submit(); ">Logout</a>
+                   
+                   <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                   {{ csrf_field() }}
+            </form>
           </div>
         </div>
       </div>
