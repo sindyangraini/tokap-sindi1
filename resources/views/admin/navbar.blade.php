@@ -6,7 +6,7 @@
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
-      </button>
+      </button>   
 
       <!-- Navbar Search -->
       <div class ="ml-auto"></div>

@@ -12,8 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('welcome'); 
+}); 
 
 Route:: group(['middleware'=>['auth']], function(){
 	Route::prefix('admin')->group(function(){

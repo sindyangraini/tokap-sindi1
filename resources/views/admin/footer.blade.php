@@ -4,4 +4,4 @@
 <span>Copyright © Sindi Angraini 2019</span>
 </div>
 </div>
-</footer>
+</footer> 

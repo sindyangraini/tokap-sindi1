@@ -69,8 +69,8 @@ class RegisterController extends Controller
         ]);
     }
 
-    protected function redirect()
+    protected function redirectTo()
     {
-         return route("admin.home");
+         return route('admin.home');
     }
 }

@@ -1,5 +1,5 @@
 @extends('admin.main')
-@section ('title','Dasboard |')
+@section ('title','Dashboard |')
 @section ('content')
 <h1>Blank Page</h1>
 <hr>
