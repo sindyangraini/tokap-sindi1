@@ -40,5 +40,17 @@ class UserController extends Controller
          } else {
             return back()->with('result','fail')->withInput();
          }
+
+   }
+
+   public function edit($id)
+   {
+      $data = User::where('id',$id)->first();
+      return view('admin.pages.user.edit',['rc'=>$data]);
+   }
+
+   public function update(Request $req)
+   {
+      return 'Funngsi Update'; 
    }
 }
