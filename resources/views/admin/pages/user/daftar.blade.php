@@ -4,8 +4,8 @@
 <h1>User</h1>
 <hr>
 
-@if(session('result')== 'sucess')
-<div class="alert alert-succes alert-dismissble fade show">
+@if(session('result')== 'success')
+<div class="alert alert-succes alert-dismissible fade show">
 	<strong>Saved!</strong>Berhasil disimpan.
 	<button type="button" class="close" data-dismiss="alert">
 		&times;
